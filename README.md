@@ -11,7 +11,7 @@ This repository currently provides **qualitative results**.
 
 ## Overview
 
-
+We propose a diffusion-based shadow generation pipeline that **injects explicit physics** by estimating **monocular 3D geometry** (dense pointmap) and a **single dominant light direction**, then deriving a **physics-grounded coarse shadow estimate** (location/shape) from these cues to synthesize **high-fidelity, photorealistic shadows** while maintaining **geometric and illumination consistency**.
 
 ![Teaser](assets/teaser.png)
 
