@@ -23,7 +23,7 @@ This repository currently provides **qualitative results**.
 
 <figure>
   <img src="assets/qualsota.png" alt="Qualitative Results" width="80%"/>
-  <figcaption><em>Visual results in both BOS (with background reference object–shadow pairs) and BOS-free (single object–shadow pair) settings. Our method consistently produces higher image fidelity and more accurate shadow masks that better respect occluder–receiver–illumination relationships.</em> </figcaption>
+  <figcaption><em>Visual results in both BOS (with background reference object–shadow pairs) and BOS-free (single object–shadow pair). Our method consistently produces higher image fidelity and more accurate shadow masks that better respect occluder–receiver–illumination relationships.</em> </figcaption>
 </figure>
 
 ### Real Composite
