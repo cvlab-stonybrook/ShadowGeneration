@@ -2,7 +2,7 @@
 
 **Embedding Physical Reasoning into Diffusion-Based Shadow Generation**  
 Shilin Hu, Jingyi Xu, Akshat Dave, Dimitris Samaras, Hieu Le  
-arXiv, 2025. [[arXiv](https://arxiv.org/abs/2512.06174)]
+arXiv, 2026. [[arXiv](https://arxiv.org/abs/2512.06174)]
 
 This repository currently provides **qualitative results**.  
 **Code and training/inference instructions will be released in a future update.**
