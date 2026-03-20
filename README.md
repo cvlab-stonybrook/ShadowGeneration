@@ -1,6 +1,6 @@
 # ShadowGeneration
 
-**Physics-Grounded Shadow Generation from Monocular 3D Geometry Priors and Approximate Light Direction**  
+**Embedding Physical Reasoning into Diffusion-Based Shadow Generation**  
 Shilin Hu, Jingyi Xu, Akshat Dave, Dimitris Samaras, Hieu Le  
 arXiv, 2025. [[arXiv](https://arxiv.org/abs/2512.06174)]
 
@@ -11,7 +11,7 @@ This repository currently provides **qualitative results**.
 
 ## Overview
 
-We propose a diffusion-based shadow generation pipeline that **injects explicit physics** by estimating **monocular 3D geometry** (dense pointmap) and a **single dominant light direction**, then deriving a **physics-grounded coarse shadow estimate** (location/shape) from these cues to synthesize **high-fidelity, photorealistic shadows** while maintaining **geometric and illumination consistency**.
+We propose a **physics-grounded diffusion-based shadow generation** pipeline that leverages **monocular 3D geometry** to recover a **dominant light direction** and derive a **coarse shadow estimate** via **geometric ray-based reasoning** to anchor shadow placement. By predicting **confidence scores** for both lighting and shadow estimates and using them to adaptively modulate conditioning during generation, our method produces photorealistic shadows with improved localization and geometric consistency.
 
 ![Teaser](assets/teaser.png)
 
@@ -26,13 +26,6 @@ We propose a diffusion-based shadow generation pipeline that **injects explicit 
   <figcaption><em>Visual results in both BOS (with background reference object–shadow pairs) and BOS-free (single object–shadow pair). Our method produces higher image fidelity and more accurate shadow masks that better respect occluder–receiver–illumination relationships.</em> </figcaption>
 </figure>
 
-### Real Composite
-
-<figure>
-  <img src="assets/manualcomposite.png" alt="Composite Results" width="80%"/>
-  <figcaption><em>Qualitative comparison on manual composite images where a foreground object is pasted into a new background. Our method generates shadows that are aligned with the inserted objects and consistent with the background illumination.</em> </figcaption>
-</figure>
-
 ---
 
 ## Citation
@@ -40,10 +33,10 @@ We propose a diffusion-based shadow generation pipeline that **injects explicit 
 If you find this work useful, please cite:
 
 ```bibtex
-@misc{hu2025physicsgroundedshadowgenerationmonocular,
-      title={Physics-Grounded Shadow Generation from Monocular 3D Geometry Priors and Approximate Light Direction}, 
+@misc{hu2026embeddingphysicalreasoningdiffusionbased,
+      title={Embedding Physical Reasoning into Diffusion-Based Shadow Generation}, 
       author={Shilin Hu and Jingyi Xu and Akshat Dave and Dimitris Samaras and Hieu Le},
-      year={2025},
+      year={2026},
       eprint={2512.06174},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
